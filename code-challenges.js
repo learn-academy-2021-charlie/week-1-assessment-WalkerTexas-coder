@@ -22,6 +22,14 @@ var temp3 = 212
 var myNumbers1 = [3, 7, 0, 36, -9]
 var myNumbers2 = [8, -7, 22, 9, 13]
 
+const sorter = (array1, array2) => {
+    let newArr = array1.concat(array2)
+    let joinedArr = newArr.join(", ")
+    let splitArray = joinedArr.split(",")
+    return splitArray.sort()
+
+}
+console.log(sorter(myNumbers1, myNumbers2));
 
 
 // --------------------3) Create a function that takes in a string of a single word and returns the string with all letters reversed.
